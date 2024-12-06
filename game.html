@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu du Pendu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jeu du Pendu</h1>
+    <p id="pseudoJoueur">Pseudo: </p>
+    <p id="difficulteChoisie">Difficulté: </p>
+
+    <div id="mot">
+      <p id="motAffiche">Mot: _ _ _ _ _</p>
+    </div>
+
+    <div id="pendu">
+      <!-- Le bonhomme du pendu sera affiché ici -->
+    </div>
+
+    <input type="text" id="inputLettre" placeholder="Entrez une lettre ou le mot complet">
+    <button id="essayerBtn">Essayer</button>
+
+    <div id="erreurs">
+      <p>Erreurs: <span id="erreursCount">0</span></p>
+    </div>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendu - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenue dans le jeu du Pendu!</h1>
+    <form id="formAccueil">
+      <label for="pseudo">Votre pseudo:</label>
+      <input type="text" id="pseudo" name="pseudo" required><br>
+
+      <label for="difficulte">Choisissez la difficulté:</label>
+      <select id="difficulte" name="difficulte">
+        <option value="facile">Facile</option>
+        <option value="moyen">Moyen</option>
+        <option value="difficile">Difficile</option>
+      </select><br>
+
+      <button href="game.html" type="submit">Commencer le jeu</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('formAccueil').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const pseudo = document.getElementById('pseudo').value;
+      const difficulte = document.getElementById('difficulte').value;
+
+      localStorage.setItem('pseudo', pseudo);
+      localStorage.setItem('difficulte', difficulte);
+
+      window.location.href = 'game.html';
+    });
+  </script>
+</body>
+</html>
