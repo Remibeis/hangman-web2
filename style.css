@@ -1,4 +1,4 @@
-body {
+body { 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,17 +8,31 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-.container {
+#accueil {background-image: url("mariopnt.jpg");
+}
+#jeu {background-image: url(FudvGYPWYAMUYE_.jpg);   
+background-size: cover;}
+#jeu .container {
   text-align: center;
-  background-color: #0bee80;
+  background-color: #ee290b;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(10, 222, 67, 0.1);
   max-width: 400px;
   width: 100%;
-}
+  position: absolute; 
+  z-index: index 1;
+  top:10%;
 
+}
+#accueil .container
+{text-align: center;
+background-color: #ee290b;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(10, 222, 67, 0.1);
+max-width: 400px;
+width: 100%;}
 input[type="text"], select {
   padding: 10px;
   margin: 10px 0;
